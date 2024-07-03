@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="student details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:id="@+id/tv1"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_alignParentStart="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="18dp"
+        android:hint="roll no " />
+
+    <EditText
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et1"
+        android:id="@+id/et2"
+        android:layout_alignParentStart="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="25dp"
+        android:hint="Enter name " />
+
+    <EditText
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et2"
+        android:id="@+id/et3"
+        android:layout_alignParentStart="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="25dp"
+        android:hint="Enter department" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="insert"
+        android:onClick="oninsert"
+        android:id="@+id/b1"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et3"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:onClick="onupdate"
+        android:id="@+id/b2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/b1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="read"
+        android:onClick="onread"
+        android:id="@+id/b3"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/b2"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:onClick="ondelete"
+        android:id="@+id/b4"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/b3"/>
+
+
+</RelativeLayout>
